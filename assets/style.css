@@ -1,0 +1,163 @@
+body {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    background: whitesmoke;
+    background-image: url("https://svs.gsfc.nasa.gov/vis/a010000/a011600/a011695/s1-1024.jpg");
+    background-image: center;
+    color: whitesmoke;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.header {
+    padding: 3px;
+    text-align:center;
+    font-size: 36px;
+    background: white;
+    opacity: 0.6;
+    margin-bottom: 5%;
+    color: black;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    justify-content: space-evenly;
+    background: white;
+    color: black;
+    opacity: 0.6;
+    padding: 5em 5em 5em 5em;
+    border-radius: 30px;
+    margin: 5em;
+    font-size: 24px;
+    font: bolder;
+}
+
+.card button {
+  background: #834bc2;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.card button:hover {
+  background: #B9D1FF;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.pure-g {
+    text-align: center;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 700px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+    opacity: 0.6;
+  }
+
+  .card-map {
+      width: 100%;
+      height: 100%;
+  }
+
+/* CSS for Quiz */
+.quizCard h1 {
+    color: black;
+    font-weight: 800;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #834bc2;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    display: block;
+    font-size: 18px;
+    margin: auto;
+    margin-bottom: 10px;
+    outline: none;
+    padding: 14px;
+    width: 100%;
+}
+
+.btn:hover {
+    background: #B9D1FF;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+.number {
+    padding: 10px 0px 10px 0px;
+}
+/* End of quiz styling */
+
+.pure-g {
+    text-align: center;
+}
+
+
+/*Start of Modal Styling */
+.modal {
+    display: none;
+    z-index: 1;
+    padding-top: 45px;
+    padding-bottom: 40px;
+    left: 0; 
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    
+  }
+  
+  .modal-content {
+    position: center; 
+    background-color: white;
+    padding: 20px 10px 20px 10px; 
+    margin: auto; 
+    margin-bottom: 20px;
+    width: 90%;  
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+  .close-btn {
+    float: right; 
+    color: grey; 
+    font-size: 36px;  
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close-btn:hover {
+    color: black;
+    transition: 0.3s;
+  }
+
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
